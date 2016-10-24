@@ -1,0 +1,72 @@
+/*********************************
+*													*
+*					µ¼º½±ßÀ¸					*
+*													*
+**********************************/
+#main_aside{
+	position:fixed;
+	right:75px;
+	top:30%;
+	z-index: 100;
+}
+#main_aside ul{
+	border:1px solid #e5e9ef;
+	border-radius:5px 5px 0 0;
+}
+#main_aside ul li:first-child a{
+	border-radius:5px 5px 0 0;
+}
+
+
+#main_aside a[title] i{
+	display:block;
+	width:18px;
+	height:17px;
+	background:url("images/iconlist_1.png") no-repeat -196px 0;
+	margin:0 auto 5px;
+}
+
+#main_aside a[title]:hover i{
+	background-position:-217px 0;
+}
+#main_aside a{
+	display:block;
+	padding:8px 0;
+	width:46px;
+	text-align:center;
+	background:#f6f9fa;
+	transition:all 0.15s;
+}
+#main_aside a:hover,#main_aside a.active{
+	color:#fff;
+	background:#00a1d6;
+}
+#main_aside > a:last-child{
+	border:1px solid #e5e9ef;
+	padding:15px 0; 
+	border-radius:3px;
+}
+#main_aside > a.sort{
+	border:1px solid #e5e9ef;
+	border-top:none;
+	padding:15px 0; 
+	border-radius:0 0 5px 5px;
+}
+#main_aside > a span{
+	display:inline-block;
+	width:18px;
+	height:10px;
+	background:url("images/iconlist_1.png") no-repeat -244px 0;
+}
+#main_aside > a:hover span{
+	background-position:-265px 0;
+}
+
+#main_aside > i{
+	display:block;
+	width:32px;
+	height:10px;
+	border-left:1px solid #e5e9ef;
+	border-right:1px solid #e5e9ef;
+	margin:0 auto;
+}

@@ -1,0 +1,409 @@
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+/*播放器页面*/
+#main_section{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#main_section:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+#main_section header:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+#main_section header .info:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+#main_section header .info .lf .title{
+	margin-bottom:10px;
+	font-size:23px;
+	color:#111;
+	
+}
+#main_section header .info .lf .bread_nav,#main_section header .info .lf .bread_nav a{
+	color:#999;
+}
+#main_section header .info .lf .bread_nav span{
+	margin-left:30px;
+}
+#main_section header .info .lf .bread_nav a:hover{
+	color:#00a1d6;
+}
+
+#main_section header .info .lf .play_info{
+	margin-top:10px;
+}
+#main_section header .info .lf .play_info span{
+	
+	float:left;
+	vertical-align:top;
+	width:auto;
+	margin-right:40px;
+	line-height:30px;
+	text-align:center;
+}
+#main_section header .info .lf .play_info span i{
+	display:inline-block;
+	vertical-align:top;
+	background-image:url('images/icons.png');
+	padding-left:40px;
+	height:30px;
+	margin-right:5px;
+}
+#main_section header .info .lf .play_info span.play_num i{
+	background-position:-645px -209px;
+}
+#main_section header .info .lf .play_info span.msg_num i{
+	background-position:-645px -274px;
+}
+#main_section header .info .lf .play_info span.coin_num i{
+	background-position:-645px -337px;
+}
+#main_section header .info .lf .play_info span.fav_num i{
+	background-position:-645px -401px;
+}
+
+
+#main_section header .info .rt{
+	width:30%;
+}
+#main_section header .info .rt .uper:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+#main_section header .info .rt .uper .uper_head img{
+	width:80px;
+	height:80px;
+	border-radius:50px;
+}
+
+#main_section header .info .rt .uper .uper_info .uper_name{
+	font-size:1.2em;
+	line-height:20px;
+	margin-right:50px;
+}
+#main_section header .info .rt .uper .uper_info{
+	margin-left:20px;
+	line-height:20px;
+}
+#main_section header .info .rt .uper .uper_info p:nth-child(2){
+	height:40px;
+}
+#main_section header .info .rt .uper .uper_info .send_letter {
+	line-height:20px;
+	vertical-align:top;
+}
+#main_section header .info .rt .uper .uper_info .send_letter i{
+	background:url('images/icons.png') -280px -2006px ;
+}
+#main_section header .info .rt .uper .uper_info .send_letter:hover i{
+	background-position:-344px -2006px ;
+}
+
+
+#main_section header .info .rt .uper .uper_info i{
+	display:inline-block;
+	height:20px;
+	width:20px;
+	background:red;
+	vertical-align:top;
+}
+#main_section header .info .rt .uper .uper_info p:last-child{
+	color:#999;
+}
+#main_section header .info .rt .uper .uper_info p:last-child span{
+	margin-right:20px;
+}
+
+#main_section header .info .rt .focus{
+	display:block;
+	width:140px;
+	line-height:25px;
+	background-color:#00a1d6;
+	text-align:center;
+	margin:0 auto;
+	color:#fff;
+	border-radius:5px;
+}
+#main_section header .info .rt .focus:hover{
+	background-color:lightblue;
+}
+#main_section header .bannar{
+	width:100%;
+	margin-top:20px;
+	margin-bottom:10px;	
+}
+
+
+#main_section .main{
+
+	border-bottom:2px solid #ddd;
+
+}
+#main_section .main .stories .button{
+	margin-bottom:10px;
+}
+
+
+#main_section .main .stories .button li{
+	box-sizing:border-box;
+	float:left;
+	line-height:25px;
+	margin:5px;
+	padding: 0 15px;
+	background:#fff;
+	color:#000;
+	border:1px solid #999;
+	border-radius:4px;
+	cursor:pointer;
+}
+
+#main_section .main .stories .button li.show_more{
+	float:right;
+}
+
+#main_section .main .stories .button li:hover,#main_section .main .stories .button li.active{
+	color:#fff;
+	background-color:#00a1d6;
+	border-color:#00a1d6;
+}
+
+#main_section .main .stories .button.shrink{
+	height:35px;
+	overflow:hidden;
+}
+
+/*** 播放器 ****/
+#main_section .main > .content .player{
+	position:relative;
+}
+
+#main_section .main > .content .player video{
+	width:800px;
+	height:450px;
+
+}
+
+#main_section .main > .content .player #pop_win{
+	position:absolute;
+	top:0;
+	left:0;
+	width:800px;
+	height:90%;
+	overflow:hidden;
+	
+	
+}
+
+#main_section .main > .content .player #pop_win span{
+	position:absolute;
+	display:block;
+	float:left;
+	font-size:20px;
+	line-height:20px;
+	width:200px;
+	color:#fff;
+	font-weight:bold;
+	transition:left 10s linear,color 0s linear 10s;
+	left:100%;
+	word-break:break-all;
+	text-shadow: 0px 0px 1px #000;
+	z-index:200;
+}
+#main_section .main > .content .player #pop_win span.active{
+	left:-200px;
+	color:transparent !important;
+}
+
+#main_section .main > .content .danmu{
+	box-sizing:border-box;
+	height:450px;
+	width:340px;
+	border:1px solid #999;
+	padding:5px;
+}
+
+#main_section .main > .content .danmu #msgwin{
+	height:405px;
+	border:1px solid #999;
+	overflow:auto;
+}
+
+#main_section .main > .content .danmu #msgwin li{
+	line-height:20px;
+	width:100%;
+	background:lightblue;
+	vertical-align:middle;
+	border-bottom:1px solid #999;
+}
+#main_section .main > .content .danmu #msgwin li span{
+	box-sizing:border-box;
+	display:inline-block;
+	line-height:20px;
+	height:20px;
+	margin:0 5px;
+	width:80%;
+	overflow:hidden;
+	vertical-align:middle;
+}
+#main_section .main > .content .danmu #msgwin li time{
+	vertical-align:middle;
+	width:20%;
+	overflow:hidden;
+}
+#main_section .main > .content .danmu #send{
+	text-align:center;
+	margin-top:5px;
+}
+
+#main_section .main > .content .danmu input{
+	height:20px;
+	padding:1px;
+	border:1px solid #999;
+	margin:0;
+	outline:none;
+	vertical-align:top;
+}
+
+#main_section .main > .content .danmu button{
+	height:24px;
+	width:50px;
+}
+
+
+/*  评论  */
+#main_section .item{
+	padding:20px 0;
+	background:#f6f9fa;
+}
+#main_section .comment .item ul{
+	box-sizing:border-box;
+	width:100%;
+	background:#fff;
+	padding:10px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	
+}
+
+#main_section .comment .item ul li{
+	float:left;
+	height:70px;
+	//border:1px solid #000;
+	margin-right:10px;
+}
+#main_section .comment .item ul li a{
+	float:left;
+	display:block;
+	height:60px;
+	width:60px;
+	
+}
+
+#main_section .comment .item ul li a.item_share{
+	background:url('images/anim-share.png') -5px -5px;
+}
+#main_section .comment .item ul li a.item_fav{
+	background:url('images/anim-fav.png') -12px -2px;
+}
+#main_section .comment .item ul li a.item_app{
+	background:url('images/anim-app.png') -10px -10px;
+}
+#main_section .comment .item ul li a.item_coin{
+	background:url('images/anim-coin.png') -12px -22px;
+}
+#main_section .comment .item ul li div{
+	float:left;
+	margin:0 10px;
+}
+#main_section .comment .item ul li h3{
+	font-size:20px;
+	line-height:30px;
+	margin-top:10px;
+}
+#main_section .comment .item ul li h3,#main_section .comment .item ul li p{
+	height:30px;
+	
+}
+
+
+#main_section .comment .video_intro{
+	border-top:1px solid #ddd;
+	padding-top:10px;
+}
+
+#main_section .comment .video_intro p{
+	margin-top:10px;
+}
+
+#main_section .comment .video_intro .tags{
+	height:20px;
+	line-height:20px;
+}
+
+#main_section .comment .video_intro .tags span{
+	display:inline-block;
+	height:18px;
+	line-height:18px;
+	padding:0 8px;
+	margin-right:10px;
+	border:1px solid #333;
+	border-radius:9px;
+	cursor:pointer;
+}
+
+#main_section .comment .video_intro .tags span:hover{
+	color:#fff;
+	background-color:#00a1d6;
+	border-color:#00a1d6;
+}
+
+
+#main_section .ad{
+	margin:20px 0;
+}
+
+#main_section .recom{
+	
+	padding-bottom:20px;
+}
+#main_section .recom h2{
+	margin-bottom:20px;
+	color:#111;
+}
+#main_section .recom >ul{
+	width:1151px;
+	padding-left:10px;
+}
+#main_section .recom >ul li{
+	box-sizing:border-box;
+	float:left;
+	width:190px;
+	padding-left:10px;
+	
+}
+
+#main_section .recom >ul li img{
+	
+	width:180px;
+	
+	display:block;
+}
+#main_section .recom >ul li span{
+	display:block;
+	margin-top:5px;
+}
+
